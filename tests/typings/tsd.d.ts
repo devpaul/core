@@ -10,6 +10,11 @@ declare module 'intern/dojo/Promise' {
 	export = Promise;
 }
 
+declare module 'intern/dojo/request' {
+	import request = require('dojo/request');
+	export = request;
+}
+
 declare module 'intern/lib/util' {
 	export function getErrorMessage(error: any): string;
 }

@@ -8,6 +8,9 @@ export function setup() {
 	if (echo && intern.mode === 'runner') {
 		echo.start().then(function (_server: any) {
 			server = _server;
+		}, function (e) {
+			console.log('echo server failed to start', e);
+			throw e;
 		});
 	}
 }
@@ -84,7 +87,7 @@ export const loaderOptions = {
 };
 
 // Non-functional test suite(s) to run in each browser
-export const suites = [ 'tests/unit/all' ];
+export const suites = [ 'tests/unit/all', 'tests/integration/all' ];
 
 // Functional test suite(s) to run in each browser once non-functional tests are completed
 export const functionalSuites = [ 'tests/functional/all' ];

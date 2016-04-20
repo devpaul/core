@@ -176,3 +176,4 @@ add('es6-array-findIndex', 'findIndex' in global.Array.prototype);
 add('es6-array-find', 'find' in global.Array.prototype);
 add('es6-array-copyWithin', 'copyWithin' in global.Array.prototype);
 add('es7-array-includes', 'includes' in global.Array.prototype);
+add('fetch', typeof global.fetch === 'function');

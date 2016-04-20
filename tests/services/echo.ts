@@ -98,7 +98,7 @@ function retrieveResource(response: any, responseType: string): void {
 	);
 }
 
-export function start(port?: number): Promise<http.Server> {
+export function start(port: number = 9001): Promise<http.Server> {
 	const echoRequest = wrapWithMultipartHandler(function (request: any, response: any) {
 		try {
 			const queryString = request.url.split('?')[1];
@@ -186,7 +186,7 @@ export function start(port?: number): Promise<http.Server> {
 		});
 		setTimeout(reject, 10000);
 	});
-	server.listen(port || 9001);
+	server.listen(port);
 
 	return promise;
 }
