@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 		},
 		typedoc: {
 			options: {
-				ignoreCompilerErrors: true, // Remove this once compile errors are resolved
+				ignoreCompilerErrors: true // Remove this once compile errors are resolved
 			}
 		}
 	});
