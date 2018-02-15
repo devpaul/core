@@ -27,6 +27,7 @@
   "devDependencies": {
     "@dojo/interfaces": "2.0.0-alpha.11",
     "@dojo/loader": "2.0.0-beta.9",
+    "@theintern/dev": "^0.6.2",
     "@types/benchmark": "~1.0.0",
     "@types/chai": "~3.4.0",
     "@types/formidable": "~1.0.0",

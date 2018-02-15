@@ -138,3 +138,21 @@ Some string functions (`codePointAt`, `fromCodePoint`, and `repeat`) adopted fro
 under the [MIT](http://opensource.org/licenses/MIT) license.
 
 See [LICENSE](LICENSE) for details.
+
+<!-- doc-viewer-config
+{
+	"api": "docs/api.json",
+	"pages": [
+		"docs/array.md",
+		"docs/DateObject.md",
+		"docs/has.md",
+		"docs/lang.md",
+		"docs/load.md",
+		"docs/math.md",
+		"docs/on.md",
+		"docs/request.md",
+		"docs/stringExtras.md",
+		"docs/UrlSearchParams.md"
+	]
+}
+-->
